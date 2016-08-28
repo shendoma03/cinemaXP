@@ -1,0 +1,58 @@
+<p>
+  <strong>Title:</strong>
+  <%= @movie.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @movie.date %>
+</p>
+<p>
+<img src="<%= @movie.img %>"  style="width:304px;height:228px;">
+</p>
+<table class="table table-hover">
+  <th>Cinema Number</th>
+  <th>Time Start</th>
+  <th>Time Finish</th>
+  <th>Tickets Available</th>
+
+
+  <tr>
+    <td><%= @movie.cinemanum %></td>
+    <td><%= @movie.time1s %></td>
+    <td><%= @movie.time1f %></td>
+    <td><%= @movie.tix1 %></td>
+  </tr>
+  <tr>
+    <td><%= @movie.cinemanum %></td>
+    <td><%= @movie.time2s %></td>
+    <td><%= @movie.time2f %></td>
+    <td><%= @movie.tix2 %></td>
+  </tr>
+  <tr>
+    <td><%= @movie.cinemanum %></td>
+    <td><%= @movie.time3s %></td>
+    <td><%= @movie.time3f %></td>
+    <td><%= @movie.tix3 %></td>
+  </tr>
+  <tr>
+    <td><%= @movie.cinemanum %></td>
+    <td><%= @movie.time4s %></td>
+    <td><%= @movie.time4f %></td>
+    <td><%= @movie.tix4 %></td>
+  </tr>
+
+  <tr><td><%= link_to 'Edit Movie', edit_movie_path %></td></tr>
+
+
+
+</table>
+
+
+
+
+

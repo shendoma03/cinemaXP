@@ -1,0 +1,91 @@
+<h1>Add Movie</h1>
+<%= form_for :movie, url: movies_path do |f| %>
+    <p>
+      <%= f.label "Movie title" %><br>
+      <%= f.text_field :title %>
+    </p>
+
+    <p>
+      <%= f.label "Description" %><br>
+      <%= f.text_area :description %>
+    </p>
+
+
+    <p>
+      <%= f.label "Date" %><br>
+      <%= f.date_select :date %>
+    </p>
+
+    <p>
+      <%= f.label "Cinema Number" %><br>
+      <%= f.text_field :cinemanum %>
+    </p><br>
+
+    <p>
+      <%= f.label "Time1 Start:" %><br>
+      <%= f.datetime_select :time1s %>
+    </p>
+
+    <p>
+      <%= f.label "Time1 Finish:" %><br>
+      <%= f.datetime_select :time1f %>
+    </p>
+
+    <p>
+      <%= f.label "Tickets Available slot 1" %><br>
+      <%= f.text_field :tix1 %>
+    </p><br>
+
+    <p>
+      <%= f.label "Time2 Start:" %><br>
+      <%= f.datetime_select :time2s %>
+    </p>
+
+    <p>
+      <%= f.label "Time2 Finish:" %><br>
+      <%= f.datetime_select :time2f %>
+    </p>
+    <p>
+      <%= f.label "Tickets Available slot2" %><br>
+      <%= f.text_field :tix2 %>
+    </p>
+
+    <p>
+      <%= f.label "Time3 Start:" %><br>
+      <%= f.datetime_select :time3s %>
+    </p>
+
+    <p>
+      <%= f.label "Time3 Finish:" %><br>
+      <%= f.datetime_select :time3f %>
+    </p>
+    <p>
+      <%= f.label "Tickets Available slot3" %><br>
+      <%= f.text_field :tix3 %>
+    </p>
+
+    <p>
+      <%= f.label "Time4 Start:" %><br>
+      <%= f.datetime_select :time4s %>
+    </p>
+
+    <p>
+      <%= f.label "Time4 Finish:" %><br>
+      <%= f.datetime_select :time4f %>
+    </p>
+    <p>
+      <%= f.label "Tickets Available slot4" %><br>
+      <%= f.text_field :tix4 %>
+    </p>
+
+    <p>
+      <%= f.label "Image link" %><br>
+      <%= f.text_field :img %>
+    </p>
+
+
+    <p>
+      <%= f.submit "Submit" %>
+    </p>
+
+<% end %>
